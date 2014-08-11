@@ -1,0 +1,25 @@
+body
+{
+	font: small/1.5em Arial, Helvetica, serif;
+	background-color: #C0FF80;
+}
+
+td
+{
+	width: 160px;
+}
+
+.right
+{
+	text-align: right;
+}
+
+.success
+{
+    color: green;
+}
+
+.failure
+{
+    color: red;
+}
