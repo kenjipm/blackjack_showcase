@@ -32,7 +32,7 @@ $session_no = $row['session_no'];
 
 //masukin ke tabel order
 $query = "INSERT INTO t_order (no_pembeli, nama_pembeli, keterangan, paid, session_no) 
-VALUES (".$jumlah_pembeli.", \"Kalimas\", \"\", 1, ".$session_no.")";
+VALUES (".($jumlah_pembeli+1).", \"Kalimas\", \"\", 1, ".$session_no.")";
 $res = mysql_query($query);
 $id_insert = mysql_insert_id();
 

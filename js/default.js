@@ -11,6 +11,7 @@ $(document).ready(function(){
 		addListener_karyawan(i);
 	}
 	addListener_bayar();
+	get_list_barang_titip_terjual();
 });
 
 function loop_update_karyawan()
@@ -119,6 +120,11 @@ function addListener_bayar()
 			{
 				post_order();
 			}
+			else
+			{
+				$("#status").addClass("failure");
+				$("#status").html("Jumlah bayar tidak mencukupi");
+			}
 		}
 	});
 }
@@ -167,6 +173,18 @@ function get_harga_barang(id_menu, row)
 		data: "",
 		success: function(result){
 			$("#harga"+row).val(result);
+		}
+	});
+}
+
+function get_list_barang_titip_terjual()
+{
+	$.ajax({
+		type: 'GET',
+		url: "ajax/get_list_barang_titip_terjual.php",
+		data: "",
+		success: function(result){
+			$("#list_barang_titip_terjual").html(result);
 		}
 	});
 }

@@ -4,9 +4,35 @@ body
 	background-color: #C0FF80;
 }
 
-td
+.leftcol
+{
+	float: left;
+	width: 500px;
+	border-right: 2px groove #DDD;
+}
+
+.rightcol
+{
+	
+}
+
+table.textbox
+{
+}
+
+table.textbox td
 {
 	width: 160px;
+}
+
+table.text td.nama
+{
+	width: 200px;
+}
+
+table.text td.jumlah
+{
+	width: 30px;
 }
 
 .right
