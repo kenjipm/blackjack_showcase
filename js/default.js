@@ -208,7 +208,7 @@ function post_order()
 		success: function(result){
 			if (result == "true")
 			{
-				location.reload();
+				document.location.reload(true);
 			}
 			else
 			{
