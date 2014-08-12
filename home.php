@@ -34,9 +34,9 @@
 						{
 							?>
 							<tr>
-								<td><input type='text' id="id_menu<?=$i?>"/></td>
-								<td><input disabled="disabled" id="nama<?=$i?>"/></td>
-								<td><input disabled="disabled" id="harga<?=$i?>"/></td>
+								<td><input type='text' id="id_menu<?=$i?>" value=""/></td>
+								<td><input disabled="disabled" id="nama<?=$i?>" value=""/></td>
+								<td><input disabled="disabled" id="harga<?=$i?>" value=""/></td>
 							</tr>
 							<?php
 						}

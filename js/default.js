@@ -1,6 +1,8 @@
 var ASCII_ENTER = 13;
 var ASCII_SPACE = 32;
 var ASCII_BACKSPACE = 8;
+var ASCII_DOT = 190;
+var ASCII_DOT_NUM = 110;
 
 $(document).ready(function(){
 	var totalrow = $("#totalrow").val();
@@ -125,6 +127,10 @@ function addListener_bayar()
 				$("#status").addClass("failure");
 				$("#status").html("Jumlah bayar tidak mencukupi");
 			}
+		}
+		else if ((event.keyCode == ASCII_DOT) || (event.keyCode == ASCII_DOT_NUM))
+		{
+			$(this).val($(this).val().slice(0,-1)+"00");
 		}
 	});
 }
